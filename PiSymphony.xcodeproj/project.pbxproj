@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BA906C1257306E100F7C32E /* PiSymphonyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA906C0257306E100F7C32E /* PiSymphonyApp.swift */; };
+		2BA906C3257306E100F7C32E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA906C2257306E100F7C32E /* ContentView.swift */; };
+		2BA906C5257306E100F7C32E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA906C4257306E100F7C32E /* Assets.xcassets */; };
+		2BA906C8257306E200F7C32E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA906C7257306E200F7C32E /* Preview Assets.xcassets */; };
+		2BA906D3257306E200F7C32E /* PiSymphonyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA906D2257306E200F7C32E /* PiSymphonyTests.swift */; };
+		2BA906DE257306E200F7C32E /* PiSymphonyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA906DD257306E200F7C32E /* PiSymphonyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BA906CF257306E200F7C32E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BA906B5257306E100F7C32E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BA906BC257306E100F7C32E;
+			remoteInfo = PiSymphony;
+		};
+		2BA906DA257306E200F7C32E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BA906B5257306E100F7C32E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BA906BC257306E100F7C32E;
+			remoteInfo = PiSymphony;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2BA906BD257306E100F7C32E /* PiSymphony.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PiSymphony.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BA906C0257306E100F7C32E /* PiSymphonyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiSymphonyApp.swift; sourceTree = "<group>"; };
+		2BA906C2257306E100F7C32E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2BA906C4257306E100F7C32E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BA906C7257306E200F7C32E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2BA906C9257306E200F7C32E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BA906CE257306E200F7C32E /* PiSymphonyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PiSymphonyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BA906D2257306E200F7C32E /* PiSymphonyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiSymphonyTests.swift; sourceTree = "<group>"; };
+		2BA906D4257306E200F7C32E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BA906D9257306E200F7C32E /* PiSymphonyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PiSymphonyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BA906DD257306E200F7C32E /* PiSymphonyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiSymphonyUITests.swift; sourceTree = "<group>"; };
+		2BA906DF257306E200F7C32E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BA906BA257306E100F7C32E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BA906CB257306E200F7C32E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BA906D6257306E200F7C32E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BA906B4257306E100F7C32E = {
+			isa = PBXGroup;
+			children = (
+				2BA906BF257306E100F7C32E /* PiSymphony */,
+				2BA906D1257306E200F7C32E /* PiSymphonyTests */,
+				2BA906DC257306E200F7C32E /* PiSymphonyUITests */,
+				2BA906BE257306E100F7C32E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2BA906BE257306E100F7C32E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BA906BD257306E100F7C32E /* PiSymphony.app */,
+				2BA906CE257306E200F7C32E /* PiSymphonyTests.xctest */,
+				2BA906D9257306E200F7C32E /* PiSymphonyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BA906BF257306E100F7C32E /* PiSymphony */ = {
+			isa = PBXGroup;
+			children = (
+				2BA906C0257306E100F7C32E /* PiSymphonyApp.swift */,
+				2BA906C2257306E100F7C32E /* ContentView.swift */,
+				2BA906C4257306E100F7C32E /* Assets.xcassets */,
+				2BA906C9257306E200F7C32E /* Info.plist */,
+				2BA906C6257306E200F7C32E /* Preview Content */,
+			);
+			path = PiSymphony;
+			sourceTree = "<group>";
+		};
+		2BA906C6257306E200F7C32E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2BA906C7257306E200F7C32E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2BA906D1257306E200F7C32E /* PiSymphonyTests */ = {
+			isa = PBXGroup;
+			children = (
+				2BA906D2257306E200F7C32E /* PiSymphonyTests.swift */,
+				2BA906D4257306E200F7C32E /* Info.plist */,
+			);
+			path = PiSymphonyTests;
+			sourceTree = "<group>";
+		};
+		2BA906DC257306E200F7C32E /* PiSymphonyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2BA906DD257306E200F7C32E /* PiSymphonyUITests.swift */,
+				2BA906DF257306E200F7C32E /* Info.plist */,
+			);
+			path = PiSymphonyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BA906BC257306E100F7C32E /* PiSymphony */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BA906E2257306E200F7C32E /* Build configuration list for PBXNativeTarget "PiSymphony" */;
+			buildPhases = (
+				2BA906B9257306E100F7C32E /* Sources */,
+				2BA906BA257306E100F7C32E /* Frameworks */,
+				2BA906BB257306E100F7C32E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PiSymphony;
+			productName = PiSymphony;
+			productReference = 2BA906BD257306E100F7C32E /* PiSymphony.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2BA906CD257306E200F7C32E /* PiSymphonyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BA906E5257306E200F7C32E /* Build configuration list for PBXNativeTarget "PiSymphonyTests" */;
+			buildPhases = (
+				2BA906CA257306E200F7C32E /* Sources */,
+				2BA906CB257306E200F7C32E /* Frameworks */,
+				2BA906CC257306E200F7C32E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BA906D0257306E200F7C32E /* PBXTargetDependency */,
+			);
+			name = PiSymphonyTests;
+			productName = PiSymphonyTests;
+			productReference = 2BA906CE257306E200F7C32E /* PiSymphonyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2BA906D8257306E200F7C32E /* PiSymphonyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BA906E8257306E200F7C32E /* Build configuration list for PBXNativeTarget "PiSymphonyUITests" */;
+			buildPhases = (
+				2BA906D5257306E200F7C32E /* Sources */,
+				2BA906D6257306E200F7C32E /* Frameworks */,
+				2BA906D7257306E200F7C32E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BA906DB257306E200F7C32E /* PBXTargetDependency */,
+			);
+			name = PiSymphonyUITests;
+			productName = PiSymphonyUITests;
+			productReference = 2BA906D9257306E200F7C32E /* PiSymphonyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BA906B5257306E100F7C32E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					2BA906BC257306E100F7C32E = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					2BA906CD257306E200F7C32E = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 2BA906BC257306E100F7C32E;
+					};
+					2BA906D8257306E200F7C32E = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 2BA906BC257306E100F7C32E;
+					};
+				};
+			};
+			buildConfigurationList = 2BA906B8257306E100F7C32E /* Build configuration list for PBXProject "PiSymphony" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2BA906B4257306E100F7C32E;
+			productRefGroup = 2BA906BE257306E100F7C32E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BA906BC257306E100F7C32E /* PiSymphony */,
+				2BA906CD257306E200F7C32E /* PiSymphonyTests */,
+				2BA906D8257306E200F7C32E /* PiSymphonyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BA906BB257306E100F7C32E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BA906C8257306E200F7C32E /* Preview Assets.xcassets in Resources */,
+				2BA906C5257306E100F7C32E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BA906CC257306E200F7C32E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BA906D7257306E200F7C32E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BA906B9257306E100F7C32E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BA906C3257306E100F7C32E /* ContentView.swift in Sources */,
+				2BA906C1257306E100F7C32E /* PiSymphonyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BA906CA257306E200F7C32E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BA906D3257306E200F7C32E /* PiSymphonyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BA906D5257306E200F7C32E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BA906DE257306E200F7C32E /* PiSymphonyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BA906D0257306E200F7C32E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BA906BC257306E100F7C32E /* PiSymphony */;
+			targetProxy = 2BA906CF257306E200F7C32E /* PBXContainerItemProxy */;
+		};
+		2BA906DB257306E200F7C32E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BA906BC257306E100F7C32E /* PiSymphony */;
+			targetProxy = 2BA906DA257306E200F7C32E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2BA906E0257306E200F7C32E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2BA906E1257306E200F7C32E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BA906E3257306E200F7C32E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PiSymphony/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PiSymphony/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rywiese.PiSymphony;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BA906E4257306E200F7C32E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PiSymphony/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PiSymphony/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rywiese.PiSymphony;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2BA906E6257306E200F7C32E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PiSymphonyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rywiese.PiSymphonyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PiSymphony.app/PiSymphony";
+			};
+			name = Debug;
+		};
+		2BA906E7257306E200F7C32E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PiSymphonyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rywiese.PiSymphonyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PiSymphony.app/PiSymphony";
+			};
+			name = Release;
+		};
+		2BA906E9257306E200F7C32E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PiSymphonyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rywiese.PiSymphonyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PiSymphony;
+			};
+			name = Debug;
+		};
+		2BA906EA257306E200F7C32E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PiSymphonyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rywiese.PiSymphonyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PiSymphony;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BA906B8257306E100F7C32E /* Build configuration list for PBXProject "PiSymphony" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BA906E0257306E200F7C32E /* Debug */,
+				2BA906E1257306E200F7C32E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BA906E2257306E200F7C32E /* Build configuration list for PBXNativeTarget "PiSymphony" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BA906E3257306E200F7C32E /* Debug */,
+				2BA906E4257306E200F7C32E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BA906E5257306E200F7C32E /* Build configuration list for PBXNativeTarget "PiSymphonyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BA906E6257306E200F7C32E /* Debug */,
+				2BA906E7257306E200F7C32E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BA906E8257306E200F7C32E /* Build configuration list for PBXNativeTarget "PiSymphonyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BA906E9257306E200F7C32E /* Debug */,
+				2BA906EA257306E200F7C32E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BA906B5257306E100F7C32E /* Project object */;
+}

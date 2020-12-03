@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		2BA906C1257306E100F7C32E /* PiSymphonyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA906C0257306E100F7C32E /* PiSymphonyApp.swift */; };
-		2BA906C3257306E100F7C32E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA906C2257306E100F7C32E /* ContentView.swift */; };
 		2BA906C5257306E100F7C32E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA906C4257306E100F7C32E /* Assets.xcassets */; };
 		2BA906C8257306E200F7C32E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA906C7257306E200F7C32E /* Preview Assets.xcassets */; };
 		2BA906D3257306E200F7C32E /* PiSymphonyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA906D2257306E200F7C32E /* PiSymphonyTests.swift */; };
 		2BA906DE257306E200F7C32E /* PiSymphonyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA906DD257306E200F7C32E /* PiSymphonyUITests.swift */; };
+		2BA906EF2573338D00F7C32E /* SpeakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA906EE2573338D00F7C32E /* SpeakerView.swift */; };
+		2BA906F525733D2100F7C32E /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA906F425733D2100F7C32E /* Speaker.swift */; };
+		2BA9071925734B5600F7C32E /* SpeakerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA9071825734B5600F7C32E /* SpeakerListView.swift */; };
+		2BA9072225734ECC00F7C32E /* RealBackendClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA9072125734ECC00F7C32E /* RealBackendClient.swift */; };
+		2BA90738257420C400F7C32E /* DummyBackendClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA90737257420C400F7C32E /* DummyBackendClient.swift */; };
+		2BA90740257424A500F7C32E /* BackendClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA9073F257424A500F7C32E /* BackendClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +40,6 @@
 /* Begin PBXFileReference section */
 		2BA906BD257306E100F7C32E /* PiSymphony.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PiSymphony.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BA906C0257306E100F7C32E /* PiSymphonyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiSymphonyApp.swift; sourceTree = "<group>"; };
-		2BA906C2257306E100F7C32E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2BA906C4257306E100F7C32E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BA906C7257306E200F7C32E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2BA906C9257306E200F7C32E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +49,12 @@
 		2BA906D9257306E200F7C32E /* PiSymphonyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PiSymphonyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BA906DD257306E200F7C32E /* PiSymphonyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiSymphonyUITests.swift; sourceTree = "<group>"; };
 		2BA906DF257306E200F7C32E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BA906EE2573338D00F7C32E /* SpeakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerView.swift; sourceTree = "<group>"; };
+		2BA906F425733D2100F7C32E /* Speaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
+		2BA9071825734B5600F7C32E /* SpeakerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerListView.swift; sourceTree = "<group>"; };
+		2BA9072125734ECC00F7C32E /* RealBackendClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealBackendClient.swift; sourceTree = "<group>"; };
+		2BA90737257420C400F7C32E /* DummyBackendClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyBackendClient.swift; sourceTree = "<group>"; };
+		2BA9073F257424A500F7C32E /* BackendClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +85,8 @@
 		2BA906B4257306E100F7C32E = {
 			isa = PBXGroup;
 			children = (
+				2BA9072025734EB400F7C32E /* Backend */,
+				2BA906F325733D1100F7C32E /* Models */,
 				2BA906BF257306E100F7C32E /* PiSymphony */,
 				2BA906D1257306E200F7C32E /* PiSymphonyTests */,
 				2BA906DC257306E200F7C32E /* PiSymphonyUITests */,
@@ -95,8 +107,9 @@
 		2BA906BF257306E100F7C32E /* PiSymphony */ = {
 			isa = PBXGroup;
 			children = (
+				2BA906EE2573338D00F7C32E /* SpeakerView.swift */,
+				2BA9071825734B5600F7C32E /* SpeakerListView.swift */,
 				2BA906C0257306E100F7C32E /* PiSymphonyApp.swift */,
-				2BA906C2257306E100F7C32E /* ContentView.swift */,
 				2BA906C4257306E100F7C32E /* Assets.xcassets */,
 				2BA906C9257306E200F7C32E /* Info.plist */,
 				2BA906C6257306E200F7C32E /* Preview Content */,
@@ -128,6 +141,24 @@
 				2BA906DF257306E200F7C32E /* Info.plist */,
 			);
 			path = PiSymphonyUITests;
+			sourceTree = "<group>";
+		};
+		2BA906F325733D1100F7C32E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2BA906F425733D2100F7C32E /* Speaker.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2BA9072025734EB400F7C32E /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				2BA9072125734ECC00F7C32E /* RealBackendClient.swift */,
+				2BA90737257420C400F7C32E /* DummyBackendClient.swift */,
+				2BA9073F257424A500F7C32E /* BackendClient.swift */,
+			);
+			path = Backend;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BA906C3257306E100F7C32E /* ContentView.swift in Sources */,
+				2BA90738257420C400F7C32E /* DummyBackendClient.swift in Sources */,
+				2BA90740257424A500F7C32E /* BackendClient.swift in Sources */,
+				2BA906EF2573338D00F7C32E /* SpeakerView.swift in Sources */,
+				2BA906F525733D2100F7C32E /* Speaker.swift in Sources */,
+				2BA9072225734ECC00F7C32E /* RealBackendClient.swift in Sources */,
 				2BA906C1257306E100F7C32E /* PiSymphonyApp.swift in Sources */,
+				2BA9071925734B5600F7C32E /* SpeakerListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

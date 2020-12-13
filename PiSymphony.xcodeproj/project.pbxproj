@@ -18,6 +18,7 @@
 		2BA9072225734ECC00F7C32E /* RealBackendClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA9072125734ECC00F7C32E /* RealBackendClient.swift */; };
 		2BA90738257420C400F7C32E /* DummyBackendClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA90737257420C400F7C32E /* DummyBackendClient.swift */; };
 		2BA90740257424A500F7C32E /* BackendClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA9073F257424A500F7C32E /* BackendClient.swift */; };
+		2BB2CE0D2585E78000B4368B /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2CE0C2585E78000B4368B /* RequestBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		2BA9072125734ECC00F7C32E /* RealBackendClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealBackendClient.swift; sourceTree = "<group>"; };
 		2BA90737257420C400F7C32E /* DummyBackendClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyBackendClient.swift; sourceTree = "<group>"; };
 		2BA9073F257424A500F7C32E /* BackendClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendClient.swift; sourceTree = "<group>"; };
+		2BB2CE0C2585E78000B4368B /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				2BA9072125734ECC00F7C32E /* RealBackendClient.swift */,
 				2BA90737257420C400F7C32E /* DummyBackendClient.swift */,
 				2BA9073F257424A500F7C32E /* BackendClient.swift */,
+				2BB2CE0C2585E78000B4368B /* RequestBuilder.swift */,
 			);
 			path = Backend;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				2BA9072225734ECC00F7C32E /* RealBackendClient.swift in Sources */,
 				2BA906C1257306E100F7C32E /* PiSymphonyApp.swift in Sources */,
 				2BA9071925734B5600F7C32E /* SpeakerListView.swift in Sources */,
+				2BB2CE0D2585E78000B4368B /* RequestBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,7 @@ import SwiftUI
 struct PiSymphonyApp: App {
     var body: some Scene {
         WindowGroup {
-            SpeakerListView(backendClient: DummyBackendClient())
+            SpeakerListView(backendClient: RealBackendClient())
         }
     }
 }

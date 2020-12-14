@@ -14,8 +14,6 @@ struct RealBackendClient: BackendClient {
     
     let session = URLSession.shared
     
-    let dummyBackendClient: BackendClient = DummyBackendClient()
-    
     func listSpeakers() -> Array<Speaker> {
         do {
             let json = try JSONSerialization.jsonObject(with: requestBuilder.get(endpoint: "/speakers"), options: []) as? [[String: Any]]

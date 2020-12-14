@@ -21,11 +21,7 @@ struct RealBackendClient: BackendClient {
             let json = try JSONSerialization.jsonObject(with: requestBuilder.get(endpoint: "/speakers"), options: []) as? [[String: Any]]
             let speakers = json?.map { speakerJson -> Speaker in
                 let id: String = (speakerJson["id"] as? String)!
-                let isEnabledInt: Int = (speakerJson["is_enabled"] as? Int)!
-                var isEnabled: Bool = false
-                if (isEnabledInt == 1) {
-                    isEnabled = true
-                }
+                let isEnabled: Bool = (speakerJson["is_enabled"] as? Int)! == 1 ? true : false
                 return Speaker(id: id, isEnabled: isEnabled)
             }
             return speakers!

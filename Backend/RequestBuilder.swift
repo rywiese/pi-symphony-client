@@ -38,6 +38,7 @@ class RequestBuilder {
         var requestData: Data? = nil
         let semaphore = DispatchSemaphore.init(value: 0)
         let task = session.dataTask(with: request) { data, response, error in
+            if error != nil {print(error)}
             urlResponse = response as! HTTPURLResponse
             requestData = data!
             semaphore.signal()

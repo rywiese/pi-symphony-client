@@ -8,9 +8,7 @@
 import Foundation
 
 struct RealBackendClient: BackendClient {
-    let requestBuilder: RequestBuilder = RequestBuilder(hostname: "localhost", port: 3000)
-    
-    let hostUrl = "http://localhost:3000"
+    let requestBuilder: RequestBuilder = RequestBuilder(hostname: "linuxbook", port: 3000)
     
     let session = URLSession.shared
     

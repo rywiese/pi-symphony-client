@@ -8,6 +8,9 @@
 import Foundation
 
 struct Speaker: Hashable, Codable, Identifiable {
-    var id: String
-    var isEnabled: Bool
+    let id: String
+    let name: String
+    let isConnected: Bool
+    var isMuted: Bool
+    let volume: Int
 }

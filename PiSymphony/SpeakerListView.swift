@@ -8,16 +8,23 @@
 import SwiftUI
 
 struct SpeakerListView: View {
-    var backendClient: BackendClient
+    let speakerService: SpeakerService
     var body: some View {
-        List(backendClient.listSpeakers()) { speaker in
-            SpeakerView(speaker: speaker, backendClient: backendClient)
+        List(
+            speakerService.listSpeakers()
+        ) { speaker in
+            SpeakerView(
+                speaker: speaker,
+                speakerService: speakerService
+            )
         }
     }
 }
 
 struct SpeakerListView_Previews: PreviewProvider {
     static var previews: some View {
-        SpeakerListView(backendClient: DummyBackendClient())
+        SpeakerListView(
+            speakerService: DummySpeakerService()
+        )
     }
 }

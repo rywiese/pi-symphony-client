@@ -9,16 +9,29 @@ import SwiftUI
 
 struct SpeakerView: View {
     @State var speaker: Speaker
-    var backendClient: BackendClient
+    let speakerService: SpeakerService
     var body: some View {
-        Toggle(speaker.id, isOn: $speaker.isEnabled)
-            .onChange(of: speaker.isEnabled, perform: { value in
-                if value {
-                    backendClient.enableSpeaker(id: speaker.id)
-                } else {
-                    backendClient.disableSpeaker(id: speaker.id)
+        Toggle(
+            speaker.name,
+            isOn: Binding<Bool>(
+                get: { !speaker.isMuted },
+                set: { bool in speaker.isMuted = !bool }
+            )
+        )
+            .onChange(
+                of: speaker.isMuted,
+                perform: { value in
+                    if value {
+                        speakerService.muteSpeaker(
+                            speakerId: speaker.id
+                        )
+                    } else {
+                        speakerService.unmuteSpeaker(
+                            speakerId: speaker.id
+                        )
+                    }
                 }
-            })
+            )
             .padding()
     }
 }
@@ -26,8 +39,14 @@ struct SpeakerView: View {
 struct SpeakerView_Previews: PreviewProvider {
     static var previews: some View {
         SpeakerView(
-            speaker: Speaker(id: "Living Room", isEnabled: true),
-            backendClient: DummyBackendClient()
+            speaker: Speaker(
+                id: "1234",
+                name: "Living Room",
+                isConnected: true,
+                isMuted: false,
+                volume: 100
+            ),
+            speakerService: DummySpeakerService()
         )
     }
 }

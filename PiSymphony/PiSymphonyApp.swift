@@ -11,7 +11,11 @@ import SwiftUI
 struct PiSymphonyApp: App {
     var body: some Scene {
         WindowGroup {
-            SpeakerListView(backendClient: RealBackendClient())
+            SpeakerListView(
+                speakerService: SnapcastSpeakerService(
+                    jsonRpcClient: JsonRpcClient()
+                )
+            )
         }
     }
 }

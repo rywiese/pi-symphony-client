@@ -15,10 +15,32 @@
 		2BA906EF2573338D00F7C32E /* SpeakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA906EE2573338D00F7C32E /* SpeakerView.swift */; };
 		2BA906F525733D2100F7C32E /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA906F425733D2100F7C32E /* Speaker.swift */; };
 		2BA9071925734B5600F7C32E /* SpeakerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA9071825734B5600F7C32E /* SpeakerListView.swift */; };
-		2BA9072225734ECC00F7C32E /* RealBackendClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA9072125734ECC00F7C32E /* RealBackendClient.swift */; };
-		2BA90738257420C400F7C32E /* DummyBackendClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA90737257420C400F7C32E /* DummyBackendClient.swift */; };
-		2BA90740257424A500F7C32E /* BackendClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA9073F257424A500F7C32E /* BackendClient.swift */; };
-		2BB2CE0D2585E78000B4368B /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2CE0C2585E78000B4368B /* RequestBuilder.swift */; };
+		2BB2CE0D2585E78000B4368B /* HttpRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2CE0C2585E78000B4368B /* HttpRequester.swift */; };
+		2BCA596026B28D910082F752 /* SpeakerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCA595F26B28D910082F752 /* SpeakerService.swift */; };
+		2BCA596326B295220082F752 /* SnapcastSpeakerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCA596226B295220082F752 /* SnapcastSpeakerService.swift */; };
+		2BCA596526B2958F0082F752 /* DummySpeakerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCA596426B2958F0082F752 /* DummySpeakerService.swift */; };
+		2BCA596726B299970082F752 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCA596626B299970082F752 /* Request.swift */; };
+		2BCA596926B29B720082F752 /* RequestWithParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCA596826B29B720082F752 /* RequestWithParams.swift */; };
+		2BCA596B26B29BE30082F752 /* Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCA596A26B29BE30082F752 /* Params.swift */; };
+		2BCA596D26B29E5E0082F752 /* GetServerStatusRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCA596C26B29E5E0082F752 /* GetServerStatusRequest.swift */; };
+		2BD54AC826B2594900176A32 /* JsonRpcClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD54AC726B2594900176A32 /* JsonRpcClient.swift */; };
+		2BD54AD226B2632E00176A32 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD54AD126B2632E00176A32 /* Volume.swift */; };
+		2BD54AD426B2637A00176A32 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD54AD326B2637A00176A32 /* Client.swift */; };
+		2BD54AD626B263B300176A32 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD54AD526B263B300176A32 /* Config.swift */; };
+		2BD54AD826B2640700176A32 /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD54AD726B2640700176A32 /* Host.swift */; };
+		2BD54ADA26B2646400176A32 /* LastSeen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD54AD926B2646400176A32 /* LastSeen.swift */; };
+		2BD54ADC26B264F700176A32 /* SnapClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD54ADB26B264F700176A32 /* SnapClient.swift */; };
+		2BD54ADE26B2654300176A32 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD54ADD26B2654300176A32 /* Group.swift */; };
+		2BD54AE026B265CB00176A32 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD54ADF26B265CB00176A32 /* System.swift */; };
+		2BD54AE226B2664200176A32 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD54AE126B2664200176A32 /* Server.swift */; };
+		2BD54AE426B2667700176A32 /* SnapServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD54AE326B2667700176A32 /* SnapServer.swift */; };
+		2BD54AE626B267B900176A32 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD54AE526B267B900176A32 /* Stream.swift */; };
+		2BD54AE826B2684200176A32 /* Uri.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD54AE726B2684200176A32 /* Uri.swift */; };
+		2BD54AEA26B2687400176A32 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD54AE926B2687400176A32 /* Query.swift */; };
+		2BD54AEC26B269D500176A32 /* GetServerStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD54AEB26B269D500176A32 /* GetServerStatusResponse.swift */; };
+		2BD54AEE26B26A1A00176A32 /* GetServerStatusResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD54AED26B26A1A00176A32 /* GetServerStatusResult.swift */; };
+		2BD54AF226B276E800176A32 /* SetVolumeParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD54AF126B276E800176A32 /* SetVolumeParams.swift */; };
+		2BD54AF426B2772700176A32 /* SetVolumeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD54AF326B2772700176A32 /* SetVolumeRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +75,32 @@
 		2BA906EE2573338D00F7C32E /* SpeakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerView.swift; sourceTree = "<group>"; };
 		2BA906F425733D2100F7C32E /* Speaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
 		2BA9071825734B5600F7C32E /* SpeakerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerListView.swift; sourceTree = "<group>"; };
-		2BA9072125734ECC00F7C32E /* RealBackendClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealBackendClient.swift; sourceTree = "<group>"; };
-		2BA90737257420C400F7C32E /* DummyBackendClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyBackendClient.swift; sourceTree = "<group>"; };
-		2BA9073F257424A500F7C32E /* BackendClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendClient.swift; sourceTree = "<group>"; };
-		2BB2CE0C2585E78000B4368B /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		2BB2CE0C2585E78000B4368B /* HttpRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequester.swift; sourceTree = "<group>"; };
+		2BCA595F26B28D910082F752 /* SpeakerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerService.swift; sourceTree = "<group>"; };
+		2BCA596226B295220082F752 /* SnapcastSpeakerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapcastSpeakerService.swift; sourceTree = "<group>"; };
+		2BCA596426B2958F0082F752 /* DummySpeakerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummySpeakerService.swift; sourceTree = "<group>"; };
+		2BCA596626B299970082F752 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		2BCA596826B29B720082F752 /* RequestWithParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestWithParams.swift; sourceTree = "<group>"; };
+		2BCA596A26B29BE30082F752 /* Params.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Params.swift; sourceTree = "<group>"; };
+		2BCA596C26B29E5E0082F752 /* GetServerStatusRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetServerStatusRequest.swift; sourceTree = "<group>"; };
+		2BD54AC726B2594900176A32 /* JsonRpcClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonRpcClient.swift; sourceTree = "<group>"; };
+		2BD54AD126B2632E00176A32 /* Volume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
+		2BD54AD326B2637A00176A32 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		2BD54AD526B263B300176A32 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		2BD54AD726B2640700176A32 /* Host.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Host.swift; sourceTree = "<group>"; };
+		2BD54AD926B2646400176A32 /* LastSeen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastSeen.swift; sourceTree = "<group>"; };
+		2BD54ADB26B264F700176A32 /* SnapClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapClient.swift; sourceTree = "<group>"; };
+		2BD54ADD26B2654300176A32 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		2BD54ADF26B265CB00176A32 /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		2BD54AE126B2664200176A32 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		2BD54AE326B2667700176A32 /* SnapServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapServer.swift; sourceTree = "<group>"; };
+		2BD54AE526B267B900176A32 /* Stream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
+		2BD54AE726B2684200176A32 /* Uri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uri.swift; sourceTree = "<group>"; };
+		2BD54AE926B2687400176A32 /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		2BD54AEB26B269D500176A32 /* GetServerStatusResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetServerStatusResponse.swift; sourceTree = "<group>"; };
+		2BD54AED26B26A1A00176A32 /* GetServerStatusResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetServerStatusResult.swift; sourceTree = "<group>"; };
+		2BD54AF126B276E800176A32 /* SetVolumeParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetVolumeParams.swift; sourceTree = "<group>"; };
+		2BD54AF326B2772700176A32 /* SetVolumeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetVolumeRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +131,9 @@
 		2BA906B4257306E100F7C32E = {
 			isa = PBXGroup;
 			children = (
-				2BA9072025734EB400F7C32E /* Backend */,
-				2BA906F325733D1100F7C32E /* Models */,
+				2BCA596126B28F600082F752 /* Http */,
+				2BA9072025734EB400F7C32E /* Snapcast */,
+				2BCA595D26B28D130082F752 /* Speaker */,
 				2BA906BF257306E100F7C32E /* PiSymphony */,
 				2BA906D1257306E200F7C32E /* PiSymphonyTests */,
 				2BA906DC257306E200F7C32E /* PiSymphonyUITests */,
@@ -145,23 +190,108 @@
 			path = PiSymphonyUITests;
 			sourceTree = "<group>";
 		};
-		2BA906F325733D1100F7C32E /* Models */ = {
+		2BA9072025734EB400F7C32E /* Snapcast */ = {
+			isa = PBXGroup;
+			children = (
+				2BD54AD026B262B000176A32 /* Model */,
+				2BD54AC726B2594900176A32 /* JsonRpcClient.swift */,
+			);
+			path = Snapcast;
+			sourceTree = "<group>";
+		};
+		2BCA595B26B28C4B0082F752 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				2BCA597026B2A3A90082F752 /* Server */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		2BCA595C26B28C630082F752 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				2BCA596E26B2A37C0082F752 /* Client */,
+				2BCA596F26B2A3890082F752 /* Server */,
+				2BCA596626B299970082F752 /* Request.swift */,
+				2BCA596826B29B720082F752 /* RequestWithParams.swift */,
+				2BCA596A26B29BE30082F752 /* Params.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		2BCA595D26B28D130082F752 /* Speaker */ = {
+			isa = PBXGroup;
+			children = (
+				2BCA595E26B28D430082F752 /* Model */,
+				2BCA595F26B28D910082F752 /* SpeakerService.swift */,
+				2BCA596226B295220082F752 /* SnapcastSpeakerService.swift */,
+				2BCA596426B2958F0082F752 /* DummySpeakerService.swift */,
+			);
+			path = Speaker;
+			sourceTree = "<group>";
+		};
+		2BCA595E26B28D430082F752 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				2BA906F425733D2100F7C32E /* Speaker.swift */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		2BA9072025734EB400F7C32E /* Backend */ = {
+		2BCA596126B28F600082F752 /* Http */ = {
 			isa = PBXGroup;
 			children = (
-				2BA9072125734ECC00F7C32E /* RealBackendClient.swift */,
-				2BA90737257420C400F7C32E /* DummyBackendClient.swift */,
-				2BA9073F257424A500F7C32E /* BackendClient.swift */,
-				2BB2CE0C2585E78000B4368B /* RequestBuilder.swift */,
+				2BB2CE0C2585E78000B4368B /* HttpRequester.swift */,
 			);
-			path = Backend;
+			path = Http;
+			sourceTree = "<group>";
+		};
+		2BCA596E26B2A37C0082F752 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				2BD54AF326B2772700176A32 /* SetVolumeRequest.swift */,
+				2BD54AF126B276E800176A32 /* SetVolumeParams.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		2BCA596F26B2A3890082F752 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				2BCA596C26B29E5E0082F752 /* GetServerStatusRequest.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		2BCA597026B2A3A90082F752 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				2BD54AED26B26A1A00176A32 /* GetServerStatusResult.swift */,
+				2BD54AEB26B269D500176A32 /* GetServerStatusResponse.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		2BD54AD026B262B000176A32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2BCA595C26B28C630082F752 /* Request */,
+				2BCA595B26B28C4B0082F752 /* Response */,
+				2BD54AD126B2632E00176A32 /* Volume.swift */,
+				2BD54AD326B2637A00176A32 /* Client.swift */,
+				2BD54AD526B263B300176A32 /* Config.swift */,
+				2BD54AD726B2640700176A32 /* Host.swift */,
+				2BD54AD926B2646400176A32 /* LastSeen.swift */,
+				2BD54ADB26B264F700176A32 /* SnapClient.swift */,
+				2BD54ADD26B2654300176A32 /* Group.swift */,
+				2BD54ADF26B265CB00176A32 /* System.swift */,
+				2BD54AE126B2664200176A32 /* Server.swift */,
+				2BD54AE326B2667700176A32 /* SnapServer.swift */,
+				2BD54AE526B267B900176A32 /* Stream.swift */,
+				2BD54AE726B2684200176A32 /* Uri.swift */,
+				2BD54AE926B2687400176A32 /* Query.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,14 +423,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BA90738257420C400F7C32E /* DummyBackendClient.swift in Sources */,
-				2BA90740257424A500F7C32E /* BackendClient.swift in Sources */,
+				2BCA596326B295220082F752 /* SnapcastSpeakerService.swift in Sources */,
+				2BD54AE826B2684200176A32 /* Uri.swift in Sources */,
+				2BCA596526B2958F0082F752 /* DummySpeakerService.swift in Sources */,
+				2BD54ADA26B2646400176A32 /* LastSeen.swift in Sources */,
+				2BD54ADE26B2654300176A32 /* Group.swift in Sources */,
 				2BA906EF2573338D00F7C32E /* SpeakerView.swift in Sources */,
 				2BA906F525733D2100F7C32E /* Speaker.swift in Sources */,
-				2BA9072225734ECC00F7C32E /* RealBackendClient.swift in Sources */,
+				2BCA596726B299970082F752 /* Request.swift in Sources */,
+				2BCA596926B29B720082F752 /* RequestWithParams.swift in Sources */,
+				2BD54AF226B276E800176A32 /* SetVolumeParams.swift in Sources */,
+				2BD54AD826B2640700176A32 /* Host.swift in Sources */,
+				2BCA596B26B29BE30082F752 /* Params.swift in Sources */,
+				2BD54AEE26B26A1A00176A32 /* GetServerStatusResult.swift in Sources */,
+				2BCA596D26B29E5E0082F752 /* GetServerStatusRequest.swift in Sources */,
+				2BD54AD426B2637A00176A32 /* Client.swift in Sources */,
+				2BD54AE426B2667700176A32 /* SnapServer.swift in Sources */,
+				2BD54AD626B263B300176A32 /* Config.swift in Sources */,
+				2BCA596026B28D910082F752 /* SpeakerService.swift in Sources */,
+				2BD54AD226B2632E00176A32 /* Volume.swift in Sources */,
 				2BA906C1257306E100F7C32E /* PiSymphonyApp.swift in Sources */,
+				2BD54AF426B2772700176A32 /* SetVolumeRequest.swift in Sources */,
+				2BD54ADC26B264F700176A32 /* SnapClient.swift in Sources */,
 				2BA9071925734B5600F7C32E /* SpeakerListView.swift in Sources */,
-				2BB2CE0D2585E78000B4368B /* RequestBuilder.swift in Sources */,
+				2BD54AEC26B269D500176A32 /* GetServerStatusResponse.swift in Sources */,
+				2BD54AEA26B2687400176A32 /* Query.swift in Sources */,
+				2BD54AE226B2664200176A32 /* Server.swift in Sources */,
+				2BD54AE026B265CB00176A32 /* System.swift in Sources */,
+				2BD54AC826B2594900176A32 /* JsonRpcClient.swift in Sources */,
+				2BB2CE0D2585E78000B4368B /* HttpRequester.swift in Sources */,
+				2BD54AE626B267B900176A32 /* Stream.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

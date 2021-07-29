@@ -19,7 +19,6 @@ class SnapcastSpeakerService : SpeakerService {
 
     func listSpeakers() -> Array<Speaker> {
         do {
-            print("Listing speakers.")
             return try jsonRpcClient
                 .getServerStatus()
                 .result
@@ -38,9 +37,7 @@ class SnapcastSpeakerService : SpeakerService {
                 .filter { speaker -> Bool in
                     speaker.isConnected
                 }
-        } catch let error {
-            print("Failed to list speakers. Error:")
-            print(error)
+        } catch {
             return []
         }
     }
@@ -49,13 +46,10 @@ class SnapcastSpeakerService : SpeakerService {
         speakerId: String
     ) {
         do {
-            print("Muting speaker \(speakerId).")
             try jsonRpcClient.muteClient(
                 clientId: speakerId
             )
-        } catch let error {
-            print("Failed to mute speaker \(speakerId). Error:")
-            print(error)
+        } catch {
             // TODO: Who should handle these errors
         }
     }
@@ -64,13 +58,10 @@ class SnapcastSpeakerService : SpeakerService {
         speakerId: String
     ) {
         do {
-            print("Unmuting speaker \(speakerId).")
             try jsonRpcClient.unMuteClient(
                 clientId: speakerId
             )
-        } catch let error {
-            print("Failed to unmute speaker \(speakerId). Error:")
-            print(error)
+        } catch {
             // TODO: Who should handle these errors
         }
     }

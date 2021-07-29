@@ -12,7 +12,10 @@ class HttpRequester {
     let port: Int
     let session = URLSession.shared
     
-    init(hostname: String, port: Int) {
+    init(
+        hostname: String,
+        port: Int
+    ) {
         self.hostname = hostname
         self.port = port
     }

@@ -36,15 +36,11 @@ class JsonRpcClient {
         try httpRequester.post(
             endpoint: "/jsonrpc",
             body: JSONEncoder().encode(
-                SetVolumeRequest(
-                    id: 0,
-                    jsonrpc: "2.0",
-                    method: "Client.SetVolume",
-                    params: SetVolumeParams(
+                MuteRequest(
+                    params: MuteParams(
                         id: clientId,
-                        volume: Volume(
-                            muted: true,
-                            percent: 100
+                        volume: Mute(
+                            muted: true
                         )
                     )
                 )
@@ -58,15 +54,11 @@ class JsonRpcClient {
         try httpRequester.post(
             endpoint: "/jsonrpc",
             body: JSONEncoder().encode(
-                SetVolumeRequest(
-                    id: 0,
-                    jsonrpc: "2.0",
-                    method: "Client.SetVolume",
-                    params: SetVolumeParams(
+                MuteRequest(
+                    params: MuteParams(
                         id: clientId,
-                        volume: Volume(
-                            muted: false,
-                            percent: 100
+                        volume: Mute(
+                            muted: false
                         )
                     )
                 )

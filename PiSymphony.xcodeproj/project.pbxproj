@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B5B0CA826B380890004DB2D /* Mute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B0CA726B380890004DB2D /* Mute.swift */; };
 		2BA906C1257306E100F7C32E /* PiSymphonyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA906C0257306E100F7C32E /* PiSymphonyApp.swift */; };
 		2BA906C5257306E100F7C32E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA906C4257306E100F7C32E /* Assets.xcassets */; };
 		2BA906C8257306E200F7C32E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA906C7257306E200F7C32E /* Preview Assets.xcassets */; };
@@ -19,9 +20,6 @@
 		2BCA596026B28D910082F752 /* SpeakerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCA595F26B28D910082F752 /* SpeakerService.swift */; };
 		2BCA596326B295220082F752 /* SnapcastSpeakerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCA596226B295220082F752 /* SnapcastSpeakerService.swift */; };
 		2BCA596526B2958F0082F752 /* DummySpeakerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCA596426B2958F0082F752 /* DummySpeakerService.swift */; };
-		2BCA596726B299970082F752 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCA596626B299970082F752 /* Request.swift */; };
-		2BCA596926B29B720082F752 /* RequestWithParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCA596826B29B720082F752 /* RequestWithParams.swift */; };
-		2BCA596B26B29BE30082F752 /* Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCA596A26B29BE30082F752 /* Params.swift */; };
 		2BCA596D26B29E5E0082F752 /* GetServerStatusRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCA596C26B29E5E0082F752 /* GetServerStatusRequest.swift */; };
 		2BD54AC826B2594900176A32 /* JsonRpcClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD54AC726B2594900176A32 /* JsonRpcClient.swift */; };
 		2BD54AD226B2632E00176A32 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD54AD126B2632E00176A32 /* Volume.swift */; };
@@ -39,8 +37,8 @@
 		2BD54AEA26B2687400176A32 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD54AE926B2687400176A32 /* Query.swift */; };
 		2BD54AEC26B269D500176A32 /* GetServerStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD54AEB26B269D500176A32 /* GetServerStatusResponse.swift */; };
 		2BD54AEE26B26A1A00176A32 /* GetServerStatusResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD54AED26B26A1A00176A32 /* GetServerStatusResult.swift */; };
-		2BD54AF226B276E800176A32 /* SetVolumeParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD54AF126B276E800176A32 /* SetVolumeParams.swift */; };
-		2BD54AF426B2772700176A32 /* SetVolumeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD54AF326B2772700176A32 /* SetVolumeRequest.swift */; };
+		2BD54AF226B276E800176A32 /* MuteParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD54AF126B276E800176A32 /* MuteParams.swift */; };
+		2BD54AF426B2772700176A32 /* MuteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD54AF326B2772700176A32 /* MuteRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B5B0CA726B380890004DB2D /* Mute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mute.swift; sourceTree = "<group>"; };
 		2BA906BD257306E100F7C32E /* PiSymphony.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PiSymphony.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BA906C0257306E100F7C32E /* PiSymphonyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiSymphonyApp.swift; sourceTree = "<group>"; };
 		2BA906C4257306E100F7C32E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,9 +78,6 @@
 		2BCA595F26B28D910082F752 /* SpeakerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerService.swift; sourceTree = "<group>"; };
 		2BCA596226B295220082F752 /* SnapcastSpeakerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapcastSpeakerService.swift; sourceTree = "<group>"; };
 		2BCA596426B2958F0082F752 /* DummySpeakerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummySpeakerService.swift; sourceTree = "<group>"; };
-		2BCA596626B299970082F752 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		2BCA596826B29B720082F752 /* RequestWithParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestWithParams.swift; sourceTree = "<group>"; };
-		2BCA596A26B29BE30082F752 /* Params.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Params.swift; sourceTree = "<group>"; };
 		2BCA596C26B29E5E0082F752 /* GetServerStatusRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetServerStatusRequest.swift; sourceTree = "<group>"; };
 		2BD54AC726B2594900176A32 /* JsonRpcClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonRpcClient.swift; sourceTree = "<group>"; };
 		2BD54AD126B2632E00176A32 /* Volume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
@@ -99,8 +95,8 @@
 		2BD54AE926B2687400176A32 /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
 		2BD54AEB26B269D500176A32 /* GetServerStatusResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetServerStatusResponse.swift; sourceTree = "<group>"; };
 		2BD54AED26B26A1A00176A32 /* GetServerStatusResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetServerStatusResult.swift; sourceTree = "<group>"; };
-		2BD54AF126B276E800176A32 /* SetVolumeParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetVolumeParams.swift; sourceTree = "<group>"; };
-		2BD54AF326B2772700176A32 /* SetVolumeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetVolumeRequest.swift; sourceTree = "<group>"; };
+		2BD54AF126B276E800176A32 /* MuteParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuteParams.swift; sourceTree = "<group>"; };
+		2BD54AF326B2772700176A32 /* MuteRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuteRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,9 +208,6 @@
 			children = (
 				2BCA596E26B2A37C0082F752 /* Client */,
 				2BCA596F26B2A3890082F752 /* Server */,
-				2BCA596626B299970082F752 /* Request.swift */,
-				2BCA596826B29B720082F752 /* RequestWithParams.swift */,
-				2BCA596A26B29BE30082F752 /* Params.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -249,8 +242,9 @@
 		2BCA596E26B2A37C0082F752 /* Client */ = {
 			isa = PBXGroup;
 			children = (
-				2BD54AF326B2772700176A32 /* SetVolumeRequest.swift */,
-				2BD54AF126B276E800176A32 /* SetVolumeParams.swift */,
+				2BD54AF326B2772700176A32 /* MuteRequest.swift */,
+				2BD54AF126B276E800176A32 /* MuteParams.swift */,
+				2B5B0CA726B380890004DB2D /* Mute.swift */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -430,20 +424,18 @@
 				2BD54ADE26B2654300176A32 /* Group.swift in Sources */,
 				2BA906EF2573338D00F7C32E /* SpeakerView.swift in Sources */,
 				2BA906F525733D2100F7C32E /* Speaker.swift in Sources */,
-				2BCA596726B299970082F752 /* Request.swift in Sources */,
-				2BCA596926B29B720082F752 /* RequestWithParams.swift in Sources */,
-				2BD54AF226B276E800176A32 /* SetVolumeParams.swift in Sources */,
+				2BD54AF226B276E800176A32 /* MuteParams.swift in Sources */,
 				2BD54AD826B2640700176A32 /* Host.swift in Sources */,
-				2BCA596B26B29BE30082F752 /* Params.swift in Sources */,
 				2BD54AEE26B26A1A00176A32 /* GetServerStatusResult.swift in Sources */,
 				2BCA596D26B29E5E0082F752 /* GetServerStatusRequest.swift in Sources */,
 				2BD54AD426B2637A00176A32 /* Client.swift in Sources */,
 				2BD54AE426B2667700176A32 /* SnapServer.swift in Sources */,
 				2BD54AD626B263B300176A32 /* Config.swift in Sources */,
+				2B5B0CA826B380890004DB2D /* Mute.swift in Sources */,
 				2BCA596026B28D910082F752 /* SpeakerService.swift in Sources */,
 				2BD54AD226B2632E00176A32 /* Volume.swift in Sources */,
 				2BA906C1257306E100F7C32E /* PiSymphonyApp.swift in Sources */,
-				2BD54AF426B2772700176A32 /* SetVolumeRequest.swift in Sources */,
+				2BD54AF426B2772700176A32 /* MuteRequest.swift in Sources */,
 				2BD54ADC26B264F700176A32 /* SnapClient.swift in Sources */,
 				2BA9071925734B5600F7C32E /* SpeakerListView.swift in Sources */,
 				2BD54AEC26B269D500176A32 /* GetServerStatusResponse.swift in Sources */,

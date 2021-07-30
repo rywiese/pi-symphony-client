@@ -15,33 +15,20 @@ class JsonRpcClient {
     )
     
     func getServerStatus() throws -> GetServerStatusResponse {
-        do {
-            print("Trying to get server status.")
-            return try JSONDecoder().decode(
-                GetServerStatusResponse.self,
-                from: httpRequester.post(
-                    endpoint: "/jsonrpc",
-                    body: JSONEncoder().encode(GetServerStatusRequest())
-                )
-            )
-        } catch let error {
-            print("Failed to get server status. Error: \(error)")
-            throw error
-        }
+        try postWithResponse(
+            request: GetServerStatusRequest()
+        )
     }
     
     func muteClient(
         clientId: String
     ) throws {
-        try httpRequester.post(
-            endpoint: "/jsonrpc",
-            body: JSONEncoder().encode(
-                MuteRequest(
-                    params: MuteParams(
-                        id: clientId,
-                        volume: Mute(
-                            muted: true
-                        )
+        try post(
+            request: MuteRequest(
+                params: MuteParams(
+                    id: clientId,
+                    volume: Mute(
+                        muted: true
                     )
                 )
             )
@@ -51,18 +38,39 @@ class JsonRpcClient {
     func unMuteClient(
         clientId: String
     ) throws {
-        try httpRequester.post(
-            endpoint: "/jsonrpc",
-            body: JSONEncoder().encode(
-                MuteRequest(
-                    params: MuteParams(
-                        id: clientId,
-                        volume: Mute(
-                            muted: false
-                        )
+        try post(
+            request: MuteRequest(
+                params: MuteParams(
+                    id: clientId,
+                    volume: Mute(
+                        muted: false
                     )
                 )
             )
+        )
+    }
+    
+    func post<S : Encodable>(
+        request: S
+    ) throws {
+        try postWithData(request: request)
+    }
+    
+    func postWithResponse<S : Encodable, T : Decodable>(
+        request: S
+    ) throws -> T {
+        try JSONDecoder().decode(
+            T.self,
+            from: postWithData(request: request)
+        )
+    }
+    
+    func postWithData<S : Encodable>(
+        request: S
+    ) throws -> Data {
+        try httpRequester.post(
+            endpoint: "/jsonrpc",
+            body: JSONEncoder().encode(request)
         )
     }
     

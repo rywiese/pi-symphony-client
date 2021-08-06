@@ -55,7 +55,9 @@ class HttpRequester {
         var urlResponseBody: Data? = nil
         let semaphore = DispatchSemaphore.init(value: 0)
         session
-            .dataTask(with: urlRequest) { data, response, error in
+            .dataTask(
+                with: urlRequest
+            ) { data, response, error in
                 urlResponseBody = data
                 semaphore.signal()
             }
